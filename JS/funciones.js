@@ -1,7 +1,7 @@
 // Esta función va a ayudar a conocer el máximo común divisor y solo funciona con números
 
-num1 = parseInt(prompt("Escribir un número"));
-num2 = parseInt(prompt("Escribir el otro numero número"));
+num1 = parseInt(prompt("Para conocer el MCD, debes escribir primero un numero"));
+num2 = parseInt(prompt("Ahora escribe el siguiente número"));
 
 function MCD (n1, n2) {
 
@@ -13,7 +13,7 @@ function MCD (n1, n2) {
         resto = n1%n2              
         n1 = n2;
         n2 = resto
-        
+
     }
 
     if (n1 == 0) {
