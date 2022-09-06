@@ -1,11 +1,13 @@
-// Se pide la edad, para saber si puedes pasar o no
+// Se pide el numero del mes en el que se nacio, para saber si se va a festejar o no
+// Para acalarar pistear no significa nada malo, es ir a festejar
 
-// Declaracion de mi variable
-let edad = [];
-edad = prompt("Ingresa tu edad, para saber si puedes pasar"); // Hago que cambie el valor de mi variable, para que pueda hacer la pregunta
+let meses = ["", "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"]; // Aqui declaro mis arrays, deje un string vacio para que tome el valor 0 
+                                                                                            // Y cuando se tome el valor de enero que es 1 apareza el alert de ya paso su compleañps   
 
-if (edad >= 18){
-    alert("Puedes entrar, adelnate") // Si tiene 18 o más años, si puede pasar
+let pregunta = parseInt(prompt("Introduce el número del mes en el que naciste"));
+
+if (pregunta >= meses.length) { // Tengo un total de 8 arrys, asi que al poner el 9 se debe de mostrar el alert que esta denajo
+    alert("Esperamos con ansias tu cumpleaños, para pistear");
 } else {
-    alert("No puedes entrar eres un niño, corre ve te habla tu mamá"); // Si no tiene la mayoria de edad, no puede pasar
+    alert("Valla ya paso tu cumpleños, nos vemos el proximo año"); // Si se pone el numero 8 o menores a este se va a ejecutar el alerte de abajo
 }
