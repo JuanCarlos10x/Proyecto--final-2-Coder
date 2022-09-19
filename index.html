@@ -5,20 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Ejercicio Con DOM</title>
+    <title>Ejercicio Con JSON y Local Storage</title>
   </head>
   <body>
-    <div id="app">
-      <div class="menu">
-        <div id="shopping-cart-container" class="hide"></div>
+    <div id="contenido">
+      <div class="container">
+
+          <h1>Local Storage</h1>
+    
+              <div class="six columns">
+                  <label for="tarea">Tarea:</label>
+                  <form  id="formulario">
+                          <label for="tarea"></label>
+                          <textarea id="tarea"></textarea>
+                          <input type="submit" value="Agregar">
+                  </form>
+              </div>
+              <div class="six columns">
+                  <h2>Mis Tareas</h2>
+                  <div id="lista-tareas"></div>
+              </div>
       </div>
-      <div id="store-container"></div>
-    </div>
+  </div> <!--#contenido-->
     <!-- <script src="./JS/ciclo.js"></script> -->
     <!-- <script src="./JS/funciones.js"></script> -->
     <!-- <script src="./JS/arrays.js"></script> -->
     <!-- <script src="./JS/primerEntrega.js"></script> -->
     <!-- <script src="./JS/DOM.js"></script> -->
-    <script src="./JS/eventos.js"></script>
+    <!-- <script src="./JS/eventos.js"></script> -->
+    <script src="./JS/JSON-LOCAl.js"></script>
   </body>
 </html>

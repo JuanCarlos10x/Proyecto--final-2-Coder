@@ -1,62 +1,27 @@
-/* estos son algunos detalles para que se puedan visualiar los elemtos de una mejor manera  */
+/* Son pocos estilos para que no se fuerze tanto la vista */
 
 body {
+    background-color: rgb(81, 156, 231);
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-size: 25px;
 }
 
-#store-container {
-    padding:  20px;
-    display: flex;
-    gap: 10px;
+.borrar-tarea,
+.borrar-tarea:hover {
+    float: inline-end;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    padding: 15px;
 }
 
-#store-container .item {
-    border-radius:  5px;
-    border: 1px solid #ccc;
-    padding: 20px;
-}
-
-#shopping-cart-container {
-    position: absolute;
-    background-color: white;
-    right: 0;
-    width: 300px;
-    border: 1px solid #ccc;
+.error {
+    background-color: red;
+    text-align: center;
     padding: 10px;
-}
-
-.show{
-    display: block;
-}
-
-.hide{
-    display: none;
-}
-
-.item .nombre{
+    text-transform: uppercase;
     font-weight: bold;
-}
-
-.item .precio {
-    color: green;
-    font-weight: bold;
-}
-
-.item div {
-    padding: 5px 0;
-}
-
-.total {
-    padding: 10px 0;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-button {
-    border: none;
-    background-color: rgb(241, 217, 28);
-    padding:  5px 10px;
-    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
 }
