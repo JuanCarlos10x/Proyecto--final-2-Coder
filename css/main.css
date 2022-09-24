@@ -1,27 +1,117 @@
-/* Son pocos estilos para que no se fuerze tanto la vista */
+/* universales */
+html {
+    font-size: 62.5%;
+}
 
 body {
-    background-color: rgb(81, 156, 231);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    background-color: rgb(164, 171, 177);
 }
 
-.borrar-tarea,
-.borrar-tarea:hover {
-    float: inline-end;
-    cursor: pointer;
-    color: red;
-    font-weight: bold;
-    padding: 15px;
+.logo {
+    margin: 10px 0;
 }
 
-.error {
-    background-color: red;
+.imagen {
+    margin: 15px 0;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.precio {
+    font-size: 2rem;
+    color: crimson;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
     text-align: center;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    max-width: 400px;
-    margin: 0 auto;
-    color: white;
+}
+
+/* header,hero, y carrito */
+
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#hero {
+    background-image: url(../img/hero.jpg);
+    height: 350px;
+    background-size: cover;
+    margin: 20px 0;
+}
+
+.encabezado {
+    text-align: center;
+    margin: 2rem;
+    font-size: 5rem;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    font-size: 1.5rem;
+    padding: 5px;
+
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+#lista-cursos .row {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.agregar-carrito {
+    margin: 10px 0;
+}
+
+
+#lista-cursos th {
+    font-size: 3rem;
+}
+
+/* cursos */
+
+#lista-cursos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+@media (min-width: 750px) {
+    #lista-cursos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer h2 {
+    font-size: 4rem;
 }
