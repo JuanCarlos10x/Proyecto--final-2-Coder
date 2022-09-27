@@ -28,6 +28,14 @@ function cargarEventListeners() {
         artiuclosCarrito = []; // reseteamos el carrito
 
         limpiarHTML(); // elimina todo el HTML
+
+        Swal.fire({
+            title: 'Se ha vaciado el carrito',
+            icon: 'error',
+            timer: '2000',
+            width: '200%'
+        }) // este es para el boton de vaciar carrito --- Me parecio lo más logico ocupar Sweet Alert para mi poryecto,
+        // Proporciona más informacion para saber si se agrego un elemento o se elimino o se ha vaciado el carrito 
     })
 }
 
@@ -41,6 +49,13 @@ function agregarCurso(e) {
         const cursoSeleccionado = e.target.parentElement.parentElement;
         leerDatosCurso(cursoSeleccionado);
     }
+
+    Swal.fire({
+        title: 'Se agrego el curso al carrito',
+        icon: 'success',
+        timer: '2000',
+        width: '200%'
+    }) // para cuando se haga click sobre agregar carrito
 }
 
 // elimina un curso del carrito
@@ -50,6 +65,13 @@ function eliminarCurso(e) {
 
         // elimina del arreglo del articulosCarrito por el data-id
         artiuclosCarrito = artiuclosCarrito.filter(curso => curso.id !== cursoId);
+
+        Swal.fire({
+            title: 'Se ha eliminado el curso del carrito',
+            icon: 'warning',
+            timer: '2000',
+            width: '200%'
+        }) // para cuando se de click sobre la X 
 
         carritoHTML(); // iterar sobre el carrito y mostrar su HTML
     }

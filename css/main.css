@@ -34,6 +34,10 @@ a {
     text-align: center;
 }
 
+ul {
+    list-style: none;
+}
+
 /* header,hero, y carrito */
 
 #contenedor {
@@ -43,9 +47,14 @@ a {
 }
 
 #hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(../img/hero.jpg);
-    height: 350px;
     background-size: cover;
+    color: #fff;
+    font-size: 3rem;
+    height: 350px;
     margin: 20px 0;
 }
 
@@ -76,6 +85,11 @@ a {
     padding: 20px;
     min-height: 400px;
     min-width: 300px;
+}
+
+.submenu:hover #lista-carrito {
+    margin: 5px 15px;
+    text-align: center;
 }
 
 #lista-cursos .row {
