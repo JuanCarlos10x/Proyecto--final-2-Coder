@@ -30,10 +30,13 @@ function cargarEventListeners() {
         limpiarHTML(); // elimina todo el HTML
 
         Swal.fire({
-            title: 'Se ha vaciado el carrito',
-            icon: 'error',
-            timer: '2000',
-            width: '200%'
+            title: 'Compra realizada con exito',
+            icon: 'success',
+            confirmButtonText: '',
+            timer: '1000',
+            timerProgressBar: true,
+            width: '90%',
+            padding: '2rem',
         }) // este es para el boton de vaciar carrito --- Me parecio lo más logico ocupar Sweet Alert para mi poryecto,
         // Proporciona más informacion para saber si se agrego un elemento o se elimino o se ha vaciado el carrito 
     })
@@ -53,8 +56,11 @@ function agregarCurso(e) {
     Swal.fire({
         title: 'Se agrego el curso al carrito',
         icon: 'success',
-        timer: '2000',
-        width: '200%'
+        confirmButtonText: '',
+        timer: '1000',
+        timerProgressBar: true,
+        width: '90%',
+        padding: '2rem',
     }) // para cuando se haga click sobre agregar carrito
 }
 
@@ -69,8 +75,11 @@ function eliminarCurso(e) {
         Swal.fire({
             title: 'Se ha eliminado el curso del carrito',
             icon: 'warning',
-            timer: '2000',
-            width: '200%'
+            confirmButtonText: '',
+            timer: '1000',
+            timerProgressBar: true,
+            width: '90%',
+            padding: '2rem',
         }) // para cuando se de click sobre la X 
 
         carritoHTML(); // iterar sobre el carrito y mostrar su HTML
