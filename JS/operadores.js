@@ -44,18 +44,18 @@ function cargarEventListeners() {
         // Proporciona más informacion para saber si se agrego un elemento o se elimino o se ha vaciado el carrito 
     });
 
-    // Para poder ver una notificaion atraves de una api de JS
-    verNotificacion.addEventListener('click', () => {
-        if (Notification.permission === 'granted') {
-            const notificacion = new Notification('Nueva Notificación', {
-                icon: 'img/DevCrash.jpg',
-                body: 'Te avisaremos cuando tengamos cursos nuevos'
-            });
-            notificacion.onclick = function () {
-                window.open()
-            }
-        }
-    }); // en caso de que no funciones se tiene que cambiar los permisos del navegador, funciona un poco mejor en firefox
+    // // Para poder ver una notificaion atraves de una api de JS
+    // verNotificacion.addEventListener('click', () => {
+    //     if (Notification.permission === 'granted') {
+    //         const notificacion = new Notification('Nueva Notificación', {
+    //             icon: 'img/DevCrash.jpg',
+    //             body: 'Te avisaremos cuando tengamos cursos nuevos'
+    //         });
+    //         notificacion.onclick = function () {
+    //             window.open()
+    //         }
+    //     }
+    // }); // en caso de que no funciones se tiene que cambiar los permisos del navegador, funciona un poco mejor en firefox
 
 }
 
