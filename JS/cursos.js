@@ -12,6 +12,7 @@ function obtenerDatos() {
         title: 'Los datos cargaron correctamente',
         icon: 'success',
         confirmButtonText: '',
+        confirmButtonColor: '#fff',
         timer: '1000',
         timerProgressBar: true,
         width: '90%',
