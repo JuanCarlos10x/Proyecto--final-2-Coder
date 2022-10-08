@@ -10,6 +10,18 @@ cargarJSONBtn.addEventListener('click', obtenerDatos);
 
 function obtenerDatos() {
 
+
+    Swal.fire({
+        title: 'Los datos cargaron correctamente',
+        icon: 'success',
+        confirmButtonText: '',
+        confirmButtonColor: '#fff',
+        timer: '1000',
+        timerProgressBar: true,
+        width: '90%',
+        padding: '2rem',
+    })
+
     const url = 'data/talleres.json';
     fetch(url)
         .then(respuesta => respuesta.json())
